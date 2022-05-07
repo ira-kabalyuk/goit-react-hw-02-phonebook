@@ -64,7 +64,7 @@ class App extends Component {
         <ContactList
           contacts={visibleContacts}
           onDeleteContact={this.deleteContact}
-        ></ContactList>
+        />
       </Container>
     );
   }
