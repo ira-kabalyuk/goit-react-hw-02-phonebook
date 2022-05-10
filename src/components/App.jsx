@@ -23,7 +23,11 @@ class App extends Component {
       number,
     };
 
-    if (this.state.contacts.find(contact => contact.name === name)) {
+    if (
+      this.state.contacts.find(
+        contact => contact.name.toLowerCase() === name.toLowerCase()
+      )
+    ) {
       return alert(`${name} is already in phonebook`);
     }
 
